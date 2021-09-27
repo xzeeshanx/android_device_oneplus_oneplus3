@@ -29,7 +29,7 @@ $(call inherit-product, vendor/oneplus/oneplus3/oneplus3-vendor.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-aosp
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
@@ -338,9 +338,7 @@ PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.oneplus3 \
     vendor.lineage.trust@1.0-service
 
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service.oneplus3
+
 
 # Media
 PRODUCT_COPY_FILES += \
